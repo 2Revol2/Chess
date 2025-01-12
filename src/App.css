@@ -1,0 +1,106 @@
+.app {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #302e2b;
+}
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+.info {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background: #262522;
+  border-radius: 10px;
+}
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  cursor: pointer;
+}
+
+.black {
+  background-color: #739552;
+}
+
+.white {
+  background-color: #ebecd0;
+}
+.selected {
+  background-color: #f5f682;
+}
+.available {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.current-player {
+  padding: 20px 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 200px;
+}
+.lost {
+  height: 100%;
+  padding: 20px;
+  color: #fff;
+}
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.start-btn {
+  padding: 10px 5px;
+  background-color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.restart-btn {
+  padding: 10px 5px;
+  width: 100%;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgba(150, 138, 138, 0.473);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+.timer {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
